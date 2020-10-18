@@ -52,6 +52,151 @@ main {
 
 
 
+/*
+#carousel{
+    width: 100%;
+    height: 100vh;
+    user-select: none;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+#carouselSlideshow{
+    overflow: hidden;
+    background-color: #333333;
+    width: 100%;
+    height: 100%;
+}
+
+
+.lArrow{
+    z-index: 1;
+    background-color: aqua;
+    position: absolute;
+    transition: background 0.5s;
+    height: 50px;
+    left: 0;
+    transform: translateY(-50%);
+    top: 50%;
+}
+
+.rArrow{
+    
+    left: auto;
+    right: 0;
+    z-index: 1;
+    background-color: aqua;
+    position: absolute;
+    transition: background 0.5s;
+    height: 50px;
+    
+    top: 50%;
+}
+
+
+
+#carouselImages{
+    width: 100%;
+    height: 100%;
+}
+
+#carouselImages img{
+    width: 100%;
+    height: 100%;
+}
+
+*/
+
+
+
+/*
+
+/* Slideshow container */
+#carouselSlideshow {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+    box-sizing: border-box;
+  }
+  
+  
+  .carouselImages {
+    display: none;
+  }
+  
+  /* Next & previous buttons */
+  .lArrow, .rArrow {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .rArrow {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+
+*/
+
+
+.carousel {
+    box-sizing: border-box;
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+  }
+  
+  /* Hide the images by default */
+.carouselImages {
+    width: 100%;
+    display: none;
+  }
+
+.carouselImages img {
+    vertical-align: middle;
+}
+  
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+
+
+
+
+
+
+
+
+
+
 
 .content{
     margin-top: 50px;
@@ -64,7 +209,9 @@ main {
 }
 
 .contentBlock{
-    min-height: 1000px;
+    width: 100%;
+    min-height: 100vh;
+    padding-bottom: 200px;
 }
 
 #expText{
@@ -186,6 +333,83 @@ h1{
     width: 30%;
 }
 
-footer{
-    width: 100%;
+
+.aboutInP{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+#fotoMia{
+    height: 80%;
+}
+
+
+#aboutInfo{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+
+.skillsPB{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 20px;
+}
+
+
+.contactSection{
+    padding-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+#contactoSocials{
+    padding-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+#contactoSocials img{
+    height: 50px;
+}
+#contactoSocials img:hover{
+    cursor: pointer;
+}
+
+
+#buttonContact{
+    font-family: 'Bebas Neue', cursive;
+    background-color: #71D9D9;
+    border: none;
+    color: white;
+    padding: 1px 20px;
+    text-align: center;
+    display: inline-block;
+    font-size: 25px;
+}
+
+
+#buttonContact:hover{
+    background-color: #333333;
+    cursor: pointer;
+}
+
+
+.formulario{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.formulario div{
+    padding: 5px;
+}
+
+.fields{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
 }
