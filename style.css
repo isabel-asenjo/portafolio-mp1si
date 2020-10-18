@@ -6,8 +6,9 @@
 }
 
 body{
-    background-color: #ffffff;
+    background-image: linear-gradient(#F28A80, #ffffff);
     font-family: 'Montserrat', sans-serif;
+    color: #333333;
 }
 
 main {
@@ -49,3 +50,142 @@ main {
     cursor: pointer;
 }
 
+
+
+
+.content{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    height: 90%;
+    justify-content: space-between;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.contentBlock{
+    min-height: 1000px;
+}
+
+#expText{
+    padding: 5px;
+    text-align: center;
+    font-size: larger;
+}
+
+
+#projList{
+    list-style-type: none;
+}
+
+.typeOfProj{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 30px;
+    padding-top: 80px;
+}
+
+.listedProject{
+    padding-top: 30px;
+    font-size: medium;
+    font-family: 'Montserrat', sans-serif;
+    list-style-type: none;
+}
+
+.projName{
+    font-weight: 1000;
+    font-size: 40px;
+    background-color: rgba(255, 255, 255, 0.75);
+    height: 50px;
+    text-align: center;
+}
+
+
+
+h1{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 80px;
+    text-align: center;
+}
+
+
+
+.projectInfo{
+    padding: 5px;
+    display: flex;
+    list-style-type: none;
+    align-items: top;
+    justify-content: space-evenly;
+
+}
+
+.refImageDiv{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.refImage{
+    max-height: 100%;
+}
+
+.projectItem {
+    background-color: #F26363bf;
+    padding: 20px;
+    height: 200px;
+    width: 300px;
+}
+
+.projectItemT {
+    background-color: #71D9D9bf;
+    padding: 20px;
+    height: 200px;
+    width: 300px;
+}
+
+
+.h3Title{
+    text-align: center;
+}
+
+.techList{
+    align-items: center;
+}
+
+.techUsed{
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 10px;
+}
+
+.imageTech{
+    height: 50px;
+}
+
+.linkToRepo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.linkToRepoImg {
+    padding-top: 10px;
+    width: 40%;
+}
+
+
+.execDate{
+    padding-top: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.dateImg{
+    width: 30%;
+}
+
+footer{
+    width: 100%;
+}
