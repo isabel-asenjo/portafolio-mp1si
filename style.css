@@ -351,6 +351,10 @@ h1{
     justify-content: space-evenly;
 }
 
+#aboutInfo h4{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 30px;
+}
 
 
 
