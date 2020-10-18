@@ -26,17 +26,20 @@ document.getElementById("linkInstagram").addEventListener('click',function(){
 
 document.getElementById("buttonContact").addEventListener('click', function(){
 
-    var nombre = document.getElementById("nameInput");
-    var email = document.getElementById("emailInput").nodeValue;
-    var message = document.getElementById("messageInput").nodeValue;
+    var nombre = document.getElementById("nameInput").value;
+    var email = document.getElementById("emailInput").value;
+    var message = document.getElementById("messageInput").value;
+
     console.log(nombre);
 
-    if ( (nombre === null) || (email === null) || (message === null)){ /*tengo que validar el email*/
-        console.log("error");
+    if ( (nombre === "") || (email === "") || (message === "") || (!(/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)))){
+        alert("Ha ingresado algún dato inválido o ha dejado un campo vacío.");
 
     } else{
         console.log('DATOS DEL USUARIO');
-        console.log(nombre);
+        console.log("Nombre: "+nombre);
+        console.log("E-mail: "+email);
+        console.log("Mensaje: "+message);
         alert("Su solicitud ha sido enviada.");
 
     }
