@@ -7,16 +7,16 @@ var mySkills = {
 }
 
 
-
+/*links a mis socials*/
 document.getElementById("linkWhatsapp").addEventListener('click',function(){ /*FUNCIONAAAAAAA :)))))))))))*/
     window.open('https://wa.me/584120229774', '_blank');
 });
 
-document.getElementById("linkTwitter").addEventListener('click',function(){ /*FUNCIONAAAAAAA :)))))))))))*/
+document.getElementById("linkTwitter").addEventListener('click',function(){
     window.open('https://twitter.com/isabelasenjoo', '_blank');
 });
 
-document.getElementById("linkInstagram").addEventListener('click',function(){ /*FUNCIONAAAAAAA :)))))))))))*/
+document.getElementById("linkInstagram").addEventListener('click',function(){
     window.open('https://t.co/OU19e2UD6N?amp=1', '_blank');
 });
 
