@@ -1,44 +1,33 @@
-document.getElementById("navbar-links-toHome").addEventListener("click", function(){alert("x");});
 
 
 
-document.getElementsByClassName("next").addEventListener("click", function(){alert("y");});
 
 
 
-document.getElementsByClassName("prev").addEventListener("click", cambiarSlides(-1));
-document.getElementsByClassName("next").addEventListener("click", cambiarSlides(1));
 
 
 
-var indiceSlideshow = 1;
-mostrar(indicesSlideshow);
+var indiceActual = 1;
+mostrar(indiceActual);
 
 
-function mostrar(indice){
-    var fotos = document.getElementsByClassName("carouselImages");
-    var x;
-    
-    if (indice > fotos.length){
-        indicesSlideshow = 1; /*esto significa que dio la vuelta completa*/
-    }
-    if (indice < 1) {
-        indiceSlideshow = fotos.length; /*esto significa que dio la vuelta pero al revés*/
-    }
-    for (x=0; x < fotos.length; x++){
-        fotos[x].style.display = "none";
-    }
-
-    fotos[indiceSlideshow -1].style.display = "block";
-    
-    
-}
+function cambiarFoto(indice) {mostrar(indiceActual += indice);}
 
 
-function slideActual(indice){
-    mostrar(indiceSlideshow = indice)
-}
+function fotoActual(indice) {mostrar(indiceActual = indice);}
 
-function cambiarSlides(indice){
-    mostrar(indiceSlideshow += indice)
+function mostrar(indice) {
+  var fotos = document.getElementsByClassName("carouselImages");
+  var dots = document.getElementsByClassName("dot");
+  var x = 0;
+  if (indice > fotos.length) {indiceActual = 1}
+  if (indice < 1) {indiceActual = fotos.length}
+  for (x = 0; x < fotos.length; x++) {
+      fotos[x].style.display = "none";
+  }
+  for (x = 0; x < dots.length; x++) {
+      dots[x].className = dots[x].className.replace(" active", "");
+  }
+  fotos[indiceActual-1].style.display = "block";
+  dots[indiceActual-1].className += " active";
 }
