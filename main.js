@@ -24,6 +24,28 @@ document.getElementById("linkInstagram").addEventListener('click',function(){
 
 
 
+document.getElementById("buttonContact").addEventListener('click', function(){
+
+    var nombre = document.getElementById("nameInput");
+    var email = document.getElementById("emailInput").nodeValue;
+    var message = document.getElementById("messageInput").nodeValue;
+    console.log(nombre);
+
+    if ( (nombre === null) || (email === null) || (message === null)){ /*tengo que validar el email*/
+        console.log("error");
+
+    } else{
+        console.log('DATOS DEL USUARIO');
+        console.log(nombre);
+        alert("Su solicitud ha sido enviada.");
+
+    }
+
+
+
+    
+});
+
 
 
 
@@ -38,7 +60,7 @@ document.getElementById("navbar-links-toHome").addEventListener("click", functio
 
 
 
-document.getElementsByClassName("next").addEventListener("click", function(){alert("y");});
+document.getElementsByClassName("next").addEventListener("click", function(){alert("x");});
 
 
 

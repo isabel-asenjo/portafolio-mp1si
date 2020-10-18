@@ -379,3 +379,37 @@ h1{
 #contactoSocials img:hover{
     cursor: pointer;
 }
+
+
+#buttonContact{
+    font-family: 'Bebas Neue', cursive;
+    background-color: #71D9D9;
+    border: none;
+    color: white;
+    padding: 1px 20px;
+    text-align: center;
+    display: inline-block;
+    font-size: 25px;
+}
+
+
+#buttonContact:hover{
+    background-color: #333333;
+    cursor: pointer;
+}
+
+
+.formulario{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.formulario div{
+    padding: 5px;
+}
+
+.fields{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
