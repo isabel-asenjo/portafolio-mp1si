@@ -56,7 +56,7 @@
 
         <div class="content">
             <div class="contentBlock">
-                <h1 id="about">ABOUT ME</h1>
+                <h1 class="title" id="about">ABOUT ME</h1>
                     <div class="aboutInP">
                         <div><img id="fotoMia" src="yo.jpg" alt="yo"></div>
                         <div id="aboutInfo">
@@ -83,11 +83,22 @@
 
             </div>
             <div class="contentBlock">
-                <h1 id="skills">SKILLS</h1>
+                <h1 class="title"id="skills">SKILLS</h1>
+
+                <!--yo se que esto lo pidieron con un json pero frité bastante y no quise dejar esto vacío :(-->
+                <div class="skillsPB">
+                    <div>Python <progress id="Python" value=50 max=100></progress></div>
+                    <div>Java <progress id="Java" value=30 max=100></progress></div>
+                    <div>HTML <progress id="HTML" value=40 max=100></progress></div>
+                </div>
+                <div class="skillsPB">
+                    <div>CSS <progress id="CSS" value=30 max=100></progress></div>
+                    <div>JavaScript <progress id="JavaScript" value=5 max=100></progress></div>
+                </div>
             </div>
 
             <div class="contentBlock">
-                <h1 id="experience">EXPERIENCE</h1>
+                <h1 class="title" id="experience">EXPERIENCE</h1>
 
                 <div>
                     <div id="expText"><p>Estos son algunos de mis proyectos...</p></div>
@@ -235,7 +246,7 @@
             </div>
 
             <div class="contentBlock">
-                <h1 id="contact">CONTACT ME</h1>
+                <h1 class="title" id="contact">CONTACT ME</h1>
                 <div class="contactSection">
                     <div class="formulario">
                         <h2>FORMULARIO</h2>
@@ -270,6 +281,8 @@
         </div>
 
     </main>
+
+    <footer id="bottom">HUMILDEMENTE DEVELOPED BY ISABEL</footer>
 
     <script type="text/javascript" src="./main.js"></script>
     

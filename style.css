@@ -77,6 +77,13 @@ h1{
 
 
 
+
+.title{
+    padding-top: 100px;
+}
+
+
+
 .projectInfo{
     padding: 5px;
     display: flex;
@@ -167,6 +174,7 @@ h1{
     flex-direction: row;
     justify-content: space-evenly;
     padding: 20px;
+    padding-top: 40px;
 }
 
 
@@ -312,4 +320,12 @@ h1{
     background-color: #F26363;
     color: #71D9D9;
     cursor: pointer;
+}
+
+
+
+#bottom{
+    text-align: center;
+    font-family: 'Bebas Neue', cursive;
+    background-color:  #71D9D9;
 }
